@@ -1,0 +1,39 @@
+---
+title: Community
+---
+<div class="ui container" style="margin-top: 100px; margin-bottom: 100px">
+
+  <h1 class="ui dividing header">Community</h1>
+
+  <p>
+    This collection was built and is maintained by the the following collaborators.
+  </p>
+
+  <div class="ui fluid four cards">
+    {% for author in site.authors %}
+      <div class="card">
+        <a href="{{ author.url }}" class="image">
+          <img src="/assets/images/{{ author.image }}">
+        </a>
+        <div class="content">
+          <a href="{{ author.url }}" class="header">{{ author.name }}</a>
+          <div class="meta">{{ author.short_name }}</div>
+          <div class="description">
+            {{ author.content | markdownify }}
+          </div>
+        </div>
+        <!--
+          <div class="extra">
+            <span class="right floated">
+              100
+            </span>
+            <span>
+              # NMs
+            </span>
+          </div>
+        -->
+      </div>
+    {% endfor %}
+  </div>
+
+</div>

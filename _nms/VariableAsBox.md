@@ -6,7 +6,8 @@ Form: Analogy
 DrawsAttentionTo: Variables, access, initialization
 UseWhen: When the concept of variables is still unclear
 Cost: Might include multiple values hypothesis
-OriginSource: ...
+OriginSource: aa
+image: VariableAsBox.png
 ---
 
 | PL | NM |

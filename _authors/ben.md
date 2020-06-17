@@ -1,6 +1,7 @@
 ---
 short_name: ben
-name: Ben DuBoulay
+name: Benedict DuBoulay
+image: ben.jpeg
 ---
 
 Ben is ...

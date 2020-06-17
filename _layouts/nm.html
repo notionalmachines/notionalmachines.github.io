@@ -1,34 +1,38 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<div class="ui container" style="margin-top: 100px; margin-bottom: 100px">
 
-<h2>Conceptual Advantage</h2>
-<p>{{ page.ConceptualAdvantage }}</p>
+  <h1 class="ui dividing header">{{ page.title }}</h1>
 
-<h2>Mapping</h2>
-{{ content }}
+  <h2>Conceptual Advantage</h2>
+  <p>{{ page.ConceptualAdvantage }}</p>
 
-<h2>Form</h2>
-<p>{{ page.Form }}</p>
+  <h2>Mapping</h2>
+  {{ content }}
 
-<h2>Draws Attention To</h2>
-<p>{{ page.DrawsAttentionTo }}</p>
+  <h2>Form</h2>
+  <p>{{ page.Form }}</p>
 
-<h2>Use When</h2>
-<p>{{ page.UseWhen }}</p>
+  <h2>Draws Attention To</h2>
+  <p>{{ page.DrawsAttentionTo }}</p>
 
-<h2>Cost</h2>
-<p>{{ page.Cost }}</p>
+  <h2>Use When</h2>
+  <p>{{ page.UseWhen }}</p>
 
-<h2>Origin / Source</h2>
-<p>{{ page.OriginSource }}</p>
+  <h2>Cost</h2>
+  <p>{{ page.Cost }}</p>
 
-<h2>Collected By</h2>
-<p>
-    {{ page.date | date_to_string }}
-    {% assign author = site.authors | where: 'short_name', page.author | first %}
-    {% if author %}
-      <a href="{{ author.url }}">{{ author.name }}</a>
-    {% endif %}
-</p>
+  <h2>Origin / Source</h2>
+  <p>{{ page.OriginSource }}</p>
+
+  <h2>Collected By</h2>
+  <p>
+      {{ page.date | date_to_string }}
+      {% assign author = site.authors | where: 'short_name', page.author | first %}
+      {% if author %}
+        <a href="{{ author.url }}">{{ author.name }}</a>
+      {% endif %}
+  </p>
+
+</div>

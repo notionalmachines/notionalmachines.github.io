@@ -1,14 +1,25 @@
 ---
 layout: default
 ---
-<h1>{{ page.name }}</h1>
+<div class="ui container" style="margin-top: 100px; margin-bottom: 100px">
 
-{{ content }}
+  <h1 class="ui dividing header">{{ page.name }}</h1>
 
-<h2>Collected Notional Machines</h2>
-<ul>
-  {% assign filtered_posts = site.nms | where: 'author', page.short_name %}
-  {% for post in filtered_posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+  {{ content }}
+
+  <h3 class="ui header">Collected Notional Machines</h3>
+
+  <div class="ui list">
+    {% assign filtered_posts = site.nms | where: 'author', page.short_name %}
+    {% for post in filtered_posts %}
+      <a class="item" href="{{ post.url }}">
+      <i class="right triangle icon"></i>
+      <div class="content">
+          <div class="header">{{ post.title }}</div>
+          <div class="description">{{ post.Form }}</div>
+      </div>
+      </a>
+    {% endfor %}
+  </div>
+
+</div>

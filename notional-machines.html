@@ -1,0 +1,56 @@
+---
+title: Notional Machines
+---
+<div class="ui text" style="margin-left: 10px; margin-right: 10px; margin-top: 100px; margin-bottom: 100px">
+
+  <h1 class="ui dividing header">Notional Machines</h1>
+
+  <p>
+  We collected the following notional machines:
+  </p>
+
+  <div class="ui cards">
+    {% for nm in site.nms %}
+      <div class="card">
+        <a href="{{ nm.url }}" class="image">
+          <img src="/assets/images/nm/{{ nm.image }}">
+        </a>
+
+        <div class="content">
+          <a href="{{ nm.url }}" class="header">{{ nm.title }}</a>
+          <div class="meta">{{ nm.Form }}</div>
+        </div>
+
+        <div class="extra" style="background-color: #fbbd08!important">
+          <h4 class="ui sub header">Conceptual Advantage</h4>
+          <span>
+            {{ nm.ConceptualAdvantage }}
+          </span>
+        </div>
+        <div class="extra">
+            <h4 class="ui sub header">Draws Attention To</h4>
+          <span>
+            {{ nm.DrawsAttentionTo }}
+          </span>
+        </div>
+
+        <div class="content">
+          <div class="description">
+            {{ nm.content | markdownify }}
+          </div>
+        </div>
+
+        <div class="extra">
+          <span class="right floated">
+            {{ nm.author }}
+          </span>
+          <span>
+            Collected by
+          </span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+
+</div>
