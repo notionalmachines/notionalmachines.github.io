@@ -27,8 +27,30 @@ url: "https://notionalmachines.github.io" # the base hostname & protocol for you
 twitter_username: jekyllrb
 github_username:  jekyll
 
+collections:
+  authors:
+    output: true
+  nms:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "nms"
+    values:
+      layout: "nm"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+    
 # Build settings
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
 

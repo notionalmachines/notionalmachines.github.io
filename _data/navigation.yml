@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Notional Machines
+  link: /notional-machines.html
+- name: Community
+  link: /community.html
+- name: About
+  link: /about.html
