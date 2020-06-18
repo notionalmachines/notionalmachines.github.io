@@ -13,14 +13,16 @@ title: Community
     {% for author in site.authors %}
       <div class="card">
         <a href="{{ author.url }}" class="image">
-          <img src="/assets/images/{{ author.image }}">
+          <img src="/assets/images/author/{{ author.image }}">
         </a>
         <div class="content">
           <a href="{{ author.url }}" class="header">{{ author.name }}</a>
-          <div class="meta">{{ author.short_name }}</div>
-          <div class="description">
-            {{ author.content | markdownify }}
-          </div>
+          <div class="meta">{{ author.affiliation }}</div>
+          <!--
+            <div class="description">
+              {{ author.content | markdownify }}
+            </div>
+          -->
         </div>
         <!--
           <div class="extra">

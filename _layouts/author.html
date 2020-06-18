@@ -2,10 +2,24 @@
 layout: default
 ---
 <div class="ui container" style="margin-top: 100px; margin-bottom: 100px">
+  <div class="ui grid">
+    <div class="eight wide column">
+      <h1 class="ui dividing header">
+        {{ page.name }}
+        <div class="sub header">
+          {{ page.affiliation }}
+        </div>
+      </h1>
+      <p>
+        <i class="home icon"></i> <a href="{{ page.homepage }}">{{ page.homepage }}</a>
+      </p>
+      {{ content }}    
+    </div>
+    <div class="four wide column">
+      <img class="ui medium rounded bordered image" src="/assets/images/author/{{ page.image }}">
+    </div>
+  </div>
 
-  <h1 class="ui dividing header">{{ page.name }}</h1>
-
-  {{ content }}
 
   <h3 class="ui header">Collected Notional Machines</h3>
 
