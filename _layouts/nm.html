@@ -35,7 +35,15 @@ layout: default
       Mapping
     </div>
   </h2>
-  {{ content }}
+  <table class="ui compact inverted blue celled selectable table">
+    <tr><th>PL</th><th>NM</th></tr>
+    {% for entry in page.Mapping %}
+      <tr>
+        <td>{{ entry[0] }}</td>
+        <td>{{ entry[1] }}</td>
+      </tr>
+    {% endfor %}
+  </table>
 
   <h2 class="ui header">
     <i class="search icon"></i>
@@ -85,5 +93,15 @@ layout: default
       </span>
     {% endif %}
   </p>
+
+
+  <h2 class="ui header">
+    <i class="info circle icon"></i>
+    <div class="content">
+      Details
+    </div>
+  </h2>
+
+  {{ content }}
 
 </div>

@@ -33,7 +33,15 @@
 
     <div class="content">
       <div class="description">
-        {{ nm.content | markdownify }}
+        <table class="ui compact inverted blue celled selectable table">
+            <tr><th>PL</th><th>NM</th></tr>
+            {% for entry in nm.Mapping %}
+              <tr>
+                <td>{{ entry[0] }}</td>
+                <td>{{ entry[1] }}</td>
+              </tr>
+            {% endfor %}
+        </table>
       </div>
     </div>
     
