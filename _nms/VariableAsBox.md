@@ -1,6 +1,8 @@
 ---
 title: Variable as Box
 author: felienne
+ProgrammingLanguage: any
+ProgrammingParadigm: imperative
 ConceptualAdvantage: Makes variable tangible, embodied activity
 Form: Analogy
 DrawsAttentionTo: Variables, access, initialization

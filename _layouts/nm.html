@@ -4,37 +4,86 @@ layout: default
 <div class="ui container" style="margin-top: 100px; margin-bottom: 100px">
 
   <h1 class="ui dividing header">{{ page.title }}</h1>
+  <div class="ui grid">
+    <div class="four wide column">
+      <img class="ui medium rounded bordered image" src="/assets/images/nm/{{ page.image }}"></img>
+    </div>
+    <div class="twelve wide column">
+      <h3>Programming Paradigm</h3>
+      <p>{{ page.ProgrammingParadigm }}</p>
+      <h3>Programming Language</h3>
+      <p>{{ page.ProgrammingLanguage }}</p>
+      <h3>Form</h3>
+      <p>{{ page.Form }}</p>
+    </div>
+  </div>
 
-  <img class="ui medium rounded bordered image" src="/assets/images/nm/{{ page.image }}"></img>
+  <h2 class="ui header">
+    <i class="thumbs up icon"></i>
+    <div class="content">
+      Conceptual Advantage
+    </div>
+  </h2>
+  <div class="ui yellow inverted segment">
+    <p>{{ page.ConceptualAdvantage }}</p>    
+  </div>
 
-  <h2>Conceptual Advantage</h2>
-  <p>{{ page.ConceptualAdvantage }}</p>
 
-  <h2>Mapping</h2>
+  <h2 class="ui header">
+    <i class="table icon"></i>
+    <div class="content">
+      Mapping
+    </div>
+  </h2>
   {{ content }}
 
-  <h2>Form</h2>
-  <p>{{ page.Form }}</p>
-
-  <h2>Draws Attention To</h2>
+  <h2 class="ui header">
+    <i class="search icon"></i>
+    <div class="content">
+      Draws Attention To
+    </div>
+  </h2>
   <p>{{ page.DrawsAttentionTo }}</p>
 
-  <h2>Use When</h2>
+  <h2 class="ui header">
+    <i class="compass icon"></i>
+    <div class="content">
+      Use When
+    </div>
+  </h2>
   <p>{{ page.UseWhen }}</p>
 
-  <h2>Cost</h2>
+  <h2 class="ui header">
+    <i class="dollar sign icon"></i>
+    <div class="content">
+      Cost
+    </div>
+  </h2>
   <p>{{ page.Cost }}</p>
 
-  <h2>Origin / Source</h2>
+  <h2 class="ui header">
+    <i class="hand point left icon"></i>
+    <div class="content">
+      Origin / Source
+    </div>
+  </h2>
   <p>{{ page.OriginSource }}</p>
 
-  <h2>Collected By</h2>
+  <h2 class="ui header">
+    <i class="user icon"></i>
+    <div class="content">
+      Attribution
+    </div>
+  </h2>
   <p>
-      {{ page.date | date_to_string }}
-      {% assign author = site.authors | where: 'short_name', page.author | first %}
-      {% if author %}
+    Collected by
+    {{ page.date | date_to_string }}
+    {% assign author = site.authors | where: 'short_name', page.author | first %}
+    {% if author %}
+      <span style="font-weight: bold; font-style: italic;">
         <a href="{{ author.url }}">{{ author.name }}</a>
-      {% endif %}
+      </span>
+    {% endif %}
   </p>
 
 </div>
