@@ -1,4 +1,3 @@
-
 ---
 title: Python Computer (Stage 1)
 author: muehling
