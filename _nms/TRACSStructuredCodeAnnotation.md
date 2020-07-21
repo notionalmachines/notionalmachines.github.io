@@ -5,7 +5,7 @@ ProgrammingLanguage: any
 ProgrammingParadigm: imperative
 ConceptualAdvantage: makes some of the hidden execution mechanisms visible and gives a full history of the trace
 Form: Representation (hand-made)
-DrawsAttentionTo: ""
+DrawsAttentionTo: Control flow, how often lines are executed, expression evaluation and declaring, initialising, accessing and updating variables
 UseWhen: When introducing how basic programming constructs work
 Cost: Example code needs to be carefully selected and formatted to avoid creating an overly difficult or time consuming annotation
 OriginSource: "Personal practice developed with Quintin Cutts as part of the PLAN C project"
