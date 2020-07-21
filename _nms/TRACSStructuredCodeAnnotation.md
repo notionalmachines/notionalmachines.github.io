@@ -18,4 +18,3 @@ Mapping:
   "Variable Assignment": "Find variable in the memory table, strike through existing entry and add an entry to the row below"
   "Conditionals and Loops": "Evaluate control expression to "True" or "False" then follow relevant labelled control path to the next instruction."
 ---
-<p> </p>
