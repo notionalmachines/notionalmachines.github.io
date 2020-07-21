@@ -1,0 +1,19 @@
+---
+title: TRACS Structured Code Annotation
+author: peter
+ProgrammingLanguage: imperative with basic control structures and variables
+ProgrammingParadigm: imperative
+ConceptualAdvantage: acts as a secondary notation for adding invisible aspects of code execution to and provides a full trace history.
+Form: Representation (hand-made)
+DrawsAttentionTo: Possible control paths, how often lines are executed, expression evaluation and declaring, initialising, accessing and updating variables
+Cost: Code needs carefully selected and formatted to avoid the annotation process becoming too difficult and time consuming.
+OriginSource: Own practice and developed with Quintin Cutts for the PLAN C project.
+image: structured_tracs.png
+Mapping:
+  "Control flow": "Stage 1- Annotate directional arrows between all possible control paths in the code."
+  Expressions: "Stage 1- add red rectangular outline around expressions.  Stage 2- copy expression, substitute values and evaluate it in expression evaluation area."
+  Instruction: "Stage 2- add current step number to arrow leading in then execute by adding to, or looking up, information in memory table, expression evaluator or output areas."
+  "Variable Declaration": "Find first blank column in memory table and add name of variable in first row. Value added underneath if initialised"
+  "Variable Assignment": "Find variable in the memory table, strike through existing entry and add an entry to the row below"
+  "Conditionals and Loops": "Evaluate control expression to "True" or "False" then follow relevant labelled control path to the next instruction."
+---
