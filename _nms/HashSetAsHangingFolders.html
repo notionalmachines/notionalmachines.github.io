@@ -30,12 +30,15 @@ Mapping:
 <p>
   <b>Why HashSet and not HashMap?: </b> I just start with <code>HashSet</code> because it is simpler. I find that students don't have trouble translating what they learned to understand <code>HashMap</code> in Java. 
 </p>
-
+<p>
+  <b>Instructional Sequence Overview:</b> I trace through what would happen with the following code that attempts to add 7 <code>Strings</code> to a <code>HashSet</code>. 
+</p> 
 <pre>
 import java.util.HashSet;
 public class FileFolderHashSet {
   public static void main(String[] args) {
     HashSet<String> folders = new HashSet<String>();
+    folders.add("Bear");
     folders.add("Bear");
     folders.add("Zebra");
     folders.add("Tiger");
@@ -47,5 +50,37 @@ public class FileFolderHashSet {
 </pre>
 
 <p>
-  <b> </b> 
+  <b>Tracing one call to the <code>add</code> method:</b> 
+  <ol> 
+      <li>Read a line of code from the class <code>FileFolderHashSet</code> above (e.g., <code>folders.add("Bear");</code>).
+          <ul>
+              <li>"We want to add the <code>String "Bear"</code> to our <code>HasSet</code> named <code>folder</code>."</li>
+              <li>"We need to know what <code>hashCode</code> returns for the <code>String "Bear"</code>."</li>
+          <ul>
+      </li>
+      <li>Modify the code in the class <code>HashCodeTest</code> below (e.g., 
+          <ul>
+              <li></li>
+          <ul>
+      </li>
+      <li>
+          <ul>
+              <li></li>
+          <ul>
+      </li>
+      <li>
+          <ul>
+              <li></li>
+          <ul>
+      </li>
+  </ol>
 </p>
+
+<pre>
+public class HashCodeTest {
+	public static void main(String[] args) {
+		String s = "Bear";
+		System.out.println("hashCode of " + s + " is " + s.hashCode());
+	}
+}
+</pre>
