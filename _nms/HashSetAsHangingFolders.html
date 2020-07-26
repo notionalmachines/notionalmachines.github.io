@@ -31,7 +31,7 @@ Mapping:
   <b>Why HashSet and not HashMap?: </b> I just start with <code>HashSet</code> because it is simpler. I find that students don't have trouble translating what they learned to understand <code>HashMap</code> in Java. 
 </p>
 <p>
-  <b>Instructional Sequence Overview:</b> I trace through what would happen with the following code that attempts to add 7 <code>Strings</code> to a <code>HashSet</code>. 
+  <b>Instructional Sequence Overview:</b> I trace through what would happen with the following code that attempts to add 7 <code>Strings</code> to a <code>HashSet</code>. First, the code will add 3 <code>String</code>s (<code>"Bear" "Zebra" "Tiger"</code>) that each go in different buckets (i.e., folders). Second, we'll try to add something that's already in the <code>HashSet</code>. Finally, then we'll add three <code>String</code>s (<code>"Orange" "Dog" "Zoo"</code>) that all go in the same bucket (i.e., folder). This allows students to see a collision where the item is <code>.equals</code> and two where they are not. 
 </p> 
 <pre>
 import java.util.HashSet;
@@ -39,9 +39,9 @@ public class FileFolderHashSet {
   public static void main(String[] args) {
     HashSet<String> folders = new HashSet<String>();
     folders.add("Bear");
-    folders.add("Bear");
     folders.add("Zebra");
     folders.add("Tiger");
+    folders.add("Bear");
     folders.add("Orange");
     folders.add("Dog");
     folders.add("Zoo");
@@ -50,7 +50,7 @@ public class FileFolderHashSet {
 </pre>
 
 <p>
-  <b>Tracing one call to the <code>add</code> method:</b> 
+  <b>Tracing one call to the <code>add</code> method:</b> This involves going through the following numbered steps. The first time I trace <code>add</code> I say all of the bullets under each step. Tracing through the <code>add</code> method after the first time, I still do each step, but I don't say all of the bullets.
   <ol> 
       <li>Read a line of code from the class <code>FileFolderHashSet</code> above (e.g., <code>folders.add("Bear");</code>).
           <ul>
@@ -72,16 +72,28 @@ public class FileFolderHashSet {
       <li>Run the code in the class <code>HashCodeTest</code> to get a value for the call to <code>hashCode()</code>.
           <ul>
               <li>The program printed: "<code>hashCode of "Bear" is 2066388</code>"</li>
-	      <li>Remember, I want to store the <code>String "Bear"</code>, but I need to remember where I put it.</li>
+	      <li>Remember, I want to store the <code>String "Bear"</code>, but I need to remember where I put it. </li> 
 	      <li>I have 10 folders, so I'll use the last digit of the <code>hashCode</code> to decide what folder to put it in.</li>
+	      <li>I could have used a different scheme as long as I was consistent!</li>
           </ul>
       </li>
       <li>Pull out the relevant folder (e.g., folder 8 for <code>"Bear"</code>). 
           <ul>
-              <li>I want to store </li> the <code>String "Bear"</code> here, but I need to make sure I haven't already stored the <code>String "Bear"</code>.
+              <li>I want to store </li> the <code>String "Bear"</code> here, but I need to make sure I haven't already stored the <code>String "Bear"</code>.</li>
           </ul>
       </li>
-  </ol>
+      <li>If the folder is empty, add the piece of paper with the <code>String</code> written on it. 
+          <ul>
+              <li>Cool - I don't have anything in this folder. I can just add it.</li>
+	      <li>What's most important is that I have a repeatable process so I coudl find it again.</li>
+          </ul>
+      </li>
+      <li>If the folder is not empty, pull out any content from the relevant folder. 
+          <ul>
+              <li>Okay - I need to call <code>.equals</code> with each of the things in here to make sure I haven't already stored the thing I'm trying to add.</li>
+          </ul>
+      </li>
+</ol>
 </p>
 
 <pre>
@@ -92,3 +104,14 @@ public class HashCodeTest {
 	}
 }
 </pre>
+<p><b><code>HashCode</code> values</b> Here are the values returned for each <code>String</code> as printed by the class <code>HashCodeTest</code>:
+<ul>
+	<li><code>hashCode of "Bear" is 2066388</code></li>
+	<li><code>hashCode of "Zebra" is 86223590</code></li>
+	<li><code>hashCode of "Tiger" is 80806047</code></li>
+	<li><code>hashCode of "Orange" is -1924984242</code></li>
+	<li><code>hashCode of "Dog" is 68892</code></li>
+	<li><code>hashCode of "Zoo" is 90042</code></li>
+</ul>
+
+
