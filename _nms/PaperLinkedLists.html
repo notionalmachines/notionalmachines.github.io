@@ -20,8 +20,10 @@ Mapping:
   "instance variable": "shown inside an object"
 ---
 
+
+
 <p>
-Before students write <code>List</code> and <code>ListNode</code> classes in Java, I give students paper cut outs representing <code>List</code> and <code>ListNode</code> objects, as shown in Figure \ref{fig:paperExample</code>. By default, the paper <code>ListNode</code> objects include an arrow from their variable <code>myNext</code>. Students can fold the bottom of one of the <code>ListNode</code> paper object up to cover that arrow and replace the value of <code>myNext</code> with an X representing <code>null</code>. I also give students variables such as <code>this</code> and <code>current</code> to be able to reference specific <code>List</code> and <code>ListNode</code> objects, respectively. I believe that these paper versions of the Objects are helpful for students as they plan and debug their code because they enforce the constraint that a variable can only reference one thing at a time. 
+Before students write <code>List</code> and <code>ListNode</code> classes in Java, I give students paper cut outs representing <code>List</code> and <code>ListNode</code> objects (add image). By default, the paper <code>ListNode</code> objects include an arrow from their variable <code>myNext</code>. Students can fold the bottom of one of the <code>ListNode</code> paper object up to cover that arrow and replace the value of <code>myNext</code> with an X representing <code>null</code>. I also give students variables such as <code>this</code> and <code>current</code> to be able to reference specific <code>List</code> and <code>ListNode</code> objects, respectively. I believe that these paper versions of the Objects are helpful for students as they plan and debug their code because they enforce the constraint that a variable can only reference one thing at a time. 
 </p>
 <p>
 <b>Scope</b>
@@ -29,7 +31,7 @@ The Notional Machine (NM) described here maps to the execution of Java. The NM r
 </p>
 <p>
 <b>Mapping</b>
-Figure \ref{fig:paperExample</code> shows a <code>List</code> named <code>this</code> with two <code>ListNodes</code>. The corresponding Java classes are shown in Figure \ref{fig:handout</code>. The larger NM, described above, is hand written. The NM described here uses paper representations of <code>List</code> and <code>ListNodes</code> objects. These papers are folded and written on when using them to trace through Java code. 
+(add image) shows a <code>List</code> named <code>this</code> with two <code>ListNodes</code>. The corresponding Java classes are shown below. The larger NM, described above, is hand written. The NM described here uses paper representations of <code>List</code> and <code>ListNodes</code> objects. These papers are folded and written on when using them to trace through Java code. 
 </p>
 
 <pre>
@@ -48,20 +50,20 @@ public class List {
 I draw objects as boxes. I write the dynamic type of the object (i.e., the constructor that was called) at the top of the box and underline it. The box contains any instance variables that the object has. I shade the box for <code>List</code> objects, but not for <code>ListNode</code> objects.  
 </p>
 <p>
-I represent variables as small boxes; the type of the variable is not represented. I write the values of Java primitives directly in that small box. For example, Figure \ref{fig:paperExample</code> shows the instance variable <code>mySize</code>, which is of type <code>int</code>. If a primitive value is updated, I cross out the previous value and rewrite it in the box. 
+I represent variables as small boxes; the type of the variable is not represented. I write the values of Java primitives directly in that small box. For example, (add image) shows the instance variable <code>mySize</code>, which is of type <code>int</code>. If a primitive value is updated, I cross out the previous value and rewrite it in the box. 
 </p>
 <p>
-To represent references, I use arrows originating from the small box. Figure \ref{fig:paperExample</code> shows instance variables <code>myHead</code>, <code>myData</code>, and <code>myNext</code>, which are all references. Figure \ref{fig:paperExample</code> also shows references that are local variables: <code>this</code>, <code>list2</code>, <code>prev</code>, <code>s</code>, <code>node</code>, and <code>next</code>. If a reference is changed, I re-position the paper so that the arrow of the newly set reference now points to the correct object. If the changed reference is an instance variable, I re-position that object and ensure that anything that was previously referencing that object still references that object. If a reference is set to <code>null</code>, I fold the paper to cover the box and arrow with a new box containing an <code>X</code>. For example, in Figure \ref{fig:paperExample</code> the arrows of the local variables <code>list2</code> and <code>next</code> are not visible because the paper has been folded back. Similarly, the bottom of the <code>ListNode</code> on the right of Figure \ref{fig:paperExample</code> has been folded up to cover the arrow and indicate that the instance variable <code>myNext</code> is <code>null</code>.
+To represent references, I use arrows originating from the small box. (add image) shows instance variables <code>myHead</code>, <code>myData</code>, and <code>myNext</code>, which are all references. (add image) also shows references that are local variables: <code>this</code>, <code>list2</code>, <code>prev</code>, <code>s</code>, <code>node</code>, and <code>next</code>. If a reference is changed, I re-position the paper so that the arrow of the newly set reference now points to the correct object. If the changed reference is an instance variable, I re-position that object and ensure that anything that was previously referencing that object still references that object. If a reference is set to <code>null</code>, I fold the paper to cover the box and arrow with a new box containing an <code>X</code>. For example, in (add image) the arrows of the local variables <code>list2</code> and <code>next</code> are not visible because the paper has been folded back. Similarly, the bottom of the <code>ListNode</code> on the right of (add image) has been folded up to cover the arrow and indicate that the instance variable <code>myNext</code> is <code>null</code>.
 </p>
 <p>
-I draw <code>String</code> objects as a rectangle. Inside the rectangle, I put double quotes and the content of the <code>String</code>. Figure \ref{fig:paperExample</code> shows two <code>String</code> objects with content <code>"X"</code> and <code>"Y"</code>, respectively. In the paper template shown in Figure \ref{fig:handout</code>, the rectangle that could include the contents of a <code>String</code> is empty and a <code>String</code> can be written in the rectangle. 
+I draw <code>String</code> objects as a rectangle. Inside the rectangle, I put double quotes and the content of the <code>String</code>. (add image) shows two <code>String</code> objects with content <code>"X"</code> and <code>"Y"</code>, respectively. In the paper template shown in (add image), the rectangle that could include the contents of a <code>String</code> is empty and a <code>String</code> can be written in the rectangle. 
 </p>
 
 <p>
 <b>Conceptual Advantages</b>
 </p>
 <p>
-The pre-drawn arrows on the paper mean that any variable can only reference one thing at a time. When students are tracing through code using hand-written diagrams, it can be difficult to keep track of the current value of a reference if that reference has been changed. For example, a drawing may end up with multiple arrows that are crossed out. For example, the local variable <code>node</code> shown in Figure \ref{fig:paperExample</code> can be moved along the <code>ListNode</code>s to trace code that walks through the linked list. Such iteration can be quite confusing when using hand-written arrows. 
+The pre-drawn arrows on the paper mean that any variable can only reference one thing at a time. When students are tracing through code using hand-written diagrams, it can be difficult to keep track of the current value of a reference if that reference has been changed. For example, a drawing may end up with multiple arrows that are crossed out. For example, the local variable <code>node</code> shown in (add image) can be moved along the <code>ListNode</code>s to trace code that walks through the linked list. Such iteration can be quite confusing when using hand-written arrows. 
 </p>
 <p>
 In students' hand-written drawings, they sometimes draw an arrow pointing at another variable instead of having both arrows point at the same object. The paper objects seem to make this less intuitive for students and they tend to have arrows point at <code>List</code> and <code>ListNode</code> objects.
@@ -74,10 +76,12 @@ Before I used the paper versions, I found that students had difficulty drawing d
 </p>
 <p>
 In the provided classes, I append the text <code>my</code> to the beginning of instance variable names to try to reinforce that every object gets a copy of those instance variables. I tell students that this is why I name instance variables in this way. 
-     
+</p>
+<p>     
 <b>Conceptual Disadvantages</b>
 The way <code>String</code> objects are drawn is not consistent with Objects of user-defined classes. My students have never commented on this inconsistency, which might be because I use <code>String</code> objects in these diagrams before I introduce objects of user-defined classes. 
-    
+</p>
+<p>  
 <b>What failed attempts have you had?</b>
 I tried prototyping versions that used ribbon or yarn for the arrow. However, this made working with the pieces too cumbersome and did not seem to add functionality. 
 </p>
@@ -89,7 +93,7 @@ I made a version of these for the Binary Search Tree (BST) class. However, I fou
 </p>
 <p>
 <b>Instructional Context</b>
-In my CS2 course, my students are learning Java. I have them implement a linked list structure in Java to help them practice with Java references. This is students' third, week-long assignment using user-defined Java classes. I use a <code>ListNode class</code> nested within the <code>List</code> class as shown in Figure \ref{fig:JavaCodeLL</code>.
+In my CS2 course, my students are learning Java. I have them implement a linked list structure in Java to help them practice with Java references. This is students' third, week-long assignment using user-defined Java classes. I use a <code>ListNode class</code> nested within the <code>List</code> class as shown in (add image).
 </p>
 <p>
 I start using similar drawings when I introduce arrays (before I introduce Objects) and students practice creating these drawings during lecture. 
@@ -100,7 +104,7 @@ Depending upon the term, my lecture sessions have 50 to 150 students. Students a
 <p>
 
 <b>Instructional Sequence</b>
-I give students a set of these papers at the beginning of class. This involves copying and cutting a set of these for each student, which is a pain! As a review of Objects, I ask students to write the Java classes (and instance variables) that they can infer exist. They haven't seen inner classes, but hopefully find this task not too difficult. Under a document camera, I show them that you can fold the bottoms up. After going over the resulting Java classes and introducing inner classes, I ask students to write a constructor for each class. I go over the constructors and then ask students to draw a memory model for the code shown in Figure \ref{fig:emptyList</code>. I use this to help students see that the variable <code>spam1</code> references an empty  <code>List</code> and the variable <code>spam2</code> is  <code>null</code>. The variable <code>spam2</code> is a variable that \textit{could</code> reference a List object, but it does not.
+I give students a set of these papers at the beginning of class. This involves copying and cutting a set of these for each student, which is a pain! As a review of Objects, I ask students to write the Java classes (and instance variables) that they can infer exist. They haven't seen inner classes, but hopefully find this task not too difficult. Under a document camera, I show them that you can fold the bottoms up. After going over the resulting Java classes and introducing inner classes, I ask students to write a constructor for each class. I go over the constructors and then ask students to draw a memory model for the code shown in (add image). I use this to help students see that the variable <code>spam1</code> references an empty  <code>List</code> and the variable <code>spam2</code> is  <code>null</code>. The variable <code>spam2</code> is a variable that \textit{could</code> reference a List object, but it does not.
 </p>
 <p>
 
@@ -113,7 +117,7 @@ public static void main(String[] args){
 </p>
 <p>
 
-Next, students write code for a method <code>addToFront(String s)</code>, which is shown in Figure \ref{fig:addToFront</code>. To try to make the task easier, I tell students that this requires only four steps. I encourage students to figure out the steps on the paper Objects with a buddy before trying to write the code. Before I used these paper cut outs, few students were able to complete the task. Now, after most pairs of students have a solution, I go over the answer. I illustrate the steps under a document camera with the paper objects a few times before showing how each step translates into a line of Java code. To remind them that we always need to consider the case of an empty  <code>List</code>, I ask them to discuss with their buddy if this would work if the <code>List</code> was originally empty; it does. Throughout my course, I always use the variable <code>this</code> explicitly because I want to draw students' attention to the fact that those variables are instance variables and not local variables. 
+Next, students write code for a method <code>addToFront(String s)</code>, which is shown in (add image). To try to make the task easier, I tell students that this requires only four steps. I encourage students to figure out the steps on the paper Objects with a buddy before trying to write the code. Before I used these paper cut outs, few students were able to complete the task. Now, after most pairs of students have a solution, I go over the answer. I illustrate the steps under a document camera with the paper objects a few times before showing how each step translates into a line of Java code. To remind them that we always need to consider the case of an empty  <code>List</code>, I ask them to discuss with their buddy if this would work if the <code>List</code> was originally empty; it does. Throughout my course, I always use the variable <code>this</code> explicitly because I want to draw students' attention to the fact that those variables are instance variables and not local variables. 
 </p>
 <p>
 <pre>
@@ -127,7 +131,7 @@ public void addToFront(String s){
 </p>
 <p>
 
-Next, I ask students to trace a version of the method, now named <code>addToFrontWrong</code> shown in Figure \ref{fig:addToFrontWrong</code>. In <code>addToFrontWrong</code>, I flipped the order of two lines of code from the correct <code>addToFront</code> method. The line <code>this.myHead = node;</code> results in losing <code>ListNode</code> objects that were in the <code>List</code> before the method call. The line <code>node.myNext = this.myHead;</code> results in the instance variable <code>myNext</code> in our newly created <code>ListNode</code> to reference itself. I point out that as a programmer we sometimes feel really frustrated when we find that we only needed to make a tiny change in our code to go from broken to working coding. I explain that we just traced a tiny change that made everything break! The details matter and we need to be paying attention to what our code does step by step. I also point out that we could have written the line <code>this.mySize++;</code> anywhere in the method. 
+Next, I ask students to trace a version of the method, now named <code>addToFrontWrong</code> shown in (add image). In <code>addToFrontWrong</code>, I flipped the order of two lines of code from the correct <code>addToFront</code> method. The line <code>this.myHead = node;</code> results in losing <code>ListNode</code> objects that were in the <code>List</code> before the method call. The line <code>node.myNext = this.myHead;</code> results in the instance variable <code>myNext</code> in our newly created <code>ListNode</code> to reference itself. I point out that as a programmer we sometimes feel really frustrated when we find that we only needed to make a tiny change in our code to go from broken to working coding. I explain that we just traced a tiny change that made everything break! The details matter and we need to be paying attention to what our code does step by step. I also point out that we could have written the line <code>this.mySize++;</code> anywhere in the method. 
 </p>
 <p>
 <pre>
@@ -152,9 +156,8 @@ public int length(){
 </pre>
 
 <p>
-Last, I have students write code that counts the <code>ListNode</code> objects in the <code>List</code>, and I acknowledge that it is a pretty silly task because the <code>List</code> class already has an instance variable <code>mySize</code>. I use <code>length</code> as shown in Figure \ref{fig:length</code> to introduce how we walk down the elements in a <code>List</code>. Again, I show the steps on a sample <code>List</code> under a document camera before translating the steps to lines of code. I point out that the variable <code>node</code> is a local variable and changing it does not change the structure of the <code>List</code>. I explain that because students will often modify a local variable when trying to modify the underlying structure of the <code>List</code>, but I don't know that my pointing it out leads to any fewer occurrences of the error. 
+Last, I have students write code that counts the <code>ListNode</code> objects in the <code>List</code>, and I acknowledge that it is a pretty silly task because the <code>List</code> class already has an instance variable <code>mySize</code>. I use <code>length</code> as shown in (add image) to introduce how we walk down the elements in a <code>List</code>. Again, I show the steps on a sample <code>List</code> under a document camera before translating the steps to lines of code. I point out that the variable <code>node</code> is a local variable and changing it does not change the structure of the <code>List</code>. I explain that because students will often modify a local variable when trying to modify the underlying structure of the <code>List</code>, but I don't know that my pointing it out leads to any fewer occurrences of the error. 
 </p>
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GETckYBTvDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
