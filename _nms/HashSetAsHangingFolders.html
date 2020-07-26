@@ -54,24 +54,32 @@ public class FileFolderHashSet {
   <ol> 
       <li>Read a line of code from the class <code>FileFolderHashSet</code> above (e.g., <code>folders.add("Bear");</code>).
           <ul>
-              <li>"We want to add the <code>String "Bear"</code> to our <code>HasSet</code> named <code>folder</code>."</li>
-              <li>"We need to know what <code>hashCode</code> returns for the <code>String "Bear"</code>."</li>
-          <ul>
+              <li>I'm a <code>HashSet</code> named <code>folder</code> and someone wants to add the <code>String "Bear"</code>.</li>
+          </ul>
       </li>
-      <li>Modify the code in the class <code>HashCodeTest</code> below (e.g., 
+      <li> Write the <code>String</code> on a piece of paper.
           <ul>
-              <li></li>
-          <ul>
+              <li>Here's the <code>String</code> that I need to store, but I need a reliable way to remember where I put it.</li>
+	      <li>First, I need to know what <code>hashCode()</code> returns for the <code>String "Bear"</code>.</li>
+          </ul>
       </li>
-      <li>
+      <li>Modify the code in the class <code>HashCodeTest</code> below (e.g., <code>String s = "Bear";</code>).
           <ul>
-              <li></li>
-          <ul>
+              <li>The <code>add</code> method in the <code>HashSet</code> class always calls <code>hashCode()</code> on the object it was passed.</li>
+	      <li>We'll use the <code>HashCodeTest</code> class to figure out what <code>hashCode()</code> would return for the <code>String "Bear"</code>.</li>
+          </ul>
       </li>
-      <li>
+      <li>Run the code in the class <code>HashCodeTest</code> to get a value for the call to <code>hashCode()</code>.
           <ul>
-              <li></li>
+              <li>The program printed: "<code>hashCode of "Bear" is 2066388</code>"</li>
+	      <li>Remember, I want to store the <code>String "Bear"</code>, but I need to remember where I put it.</li>
+	      <li>I have 10 folders, so I'll use the last digit of the <code>hashCode</code> to decide what folder to put it in.</li>
+          </ul>
+      </li>
+      <li>Pull out the relevant folder (e.g., folder 8 for <code>"Bear"</code>). 
           <ul>
+              <li>I want to store </li> the <code>String "Bear"</code> here, but I need to make sure I haven't already stored the <code>String "Bear"</code>.
+          </ul>
       </li>
   </ol>
 </p>
@@ -80,7 +88,7 @@ public class FileFolderHashSet {
 public class HashCodeTest {
 	public static void main(String[] args) {
 		String s = "Bear";
-		System.out.println("hashCode of " + s + " is " + s.hashCode());
+		System.out.println("hashCode of \"" + s + "\" is " + s.hashCode());
 	}
 }
 </pre>
