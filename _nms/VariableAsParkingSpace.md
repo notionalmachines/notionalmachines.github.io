@@ -1,3 +1,4 @@
+---
 title: Variable as a Parking Space
 author: jan
 ProgrammingLanguage: staticaly-typed
