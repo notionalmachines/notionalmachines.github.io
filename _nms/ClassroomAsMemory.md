@@ -9,7 +9,7 @@ DrawsAttentionTo: "Relationships between items in memory, whether they are eleme
 UseWhen: "When you first introduce the idea of an address"
 Cost: "Vey small"
 OriginSource: "colleague's practice"
-image: "https://upload.wikimedia.org/wikipedia/commons/1/1d/HS_1_der_Universit%C3%A4t_Klagenfurt.jpg"
+image: "HS_1_der_Universitat_Klagenfurt.jpg"
 Mapping:
   "memory cell": "seat"
   value: "student or number given to student"
