@@ -6,4 +6,4 @@ homepage: https://www.aalto.fi/fi/ihmiset/arto-hellas
 image: arto.jpg
 ---
 
-Arto is ...
+Arto is a senior university lecturer at the Department of Computer Science at Aalto University. His research interests are related to improving students' learning and retention through various (often computer-mediated) ways.
