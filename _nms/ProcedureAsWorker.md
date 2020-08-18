@@ -8,7 +8,7 @@ Form: Representation (hand-made)
 DrawsAttentionTo: "?"
 UseWhen: "?"
 Cost: "?"
-OriginSource: "Compilers (control-flow graphs) and flow charts"
+OriginSource: "Own practice"
 image: ProcedureAsWorker.jpg
 Mapping:
   "procedure": "worker who knows how to do a particular job"
