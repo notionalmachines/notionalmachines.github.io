@@ -1,0 +1,37 @@
+---
+title: Control Flow as Graph (1 - Sequence)
+author: matthias
+ProgrammingLanguage: Java
+ProgrammingParadigm: imperative
+ConceptualAdvantage: "See a method as a sequence of statements to execute, and make clear that that sequence starts when the method is called and ends when the method returns."
+Form: Handmade representation
+DrawsAttentionTo: "The idea of a 'sequence' in structured programming, where a sequence consists of statements to execute."
+UseWhen: "When introducing how to implement a method's body"
+Cost: "Introduction of a potentially new abstract representation (graph with edges and nodes). Entry and exit nodes, which do not correspond to statements in the source code (note: exit comes AFTER a possible return statement)."
+OriginSource: "Compilers (control-flow graphs) and flow charts"
+image: ControlFlowAsGraph-1-Sequence.jpg
+Mapping:
+  "statement": "rectangular node"
+  "control-flow between statements": "arrow from node to node"
+  "method entry": "round 'e' node at top"
+  "method exit": "round 'x' node at bottom"
+---
+
+<p>
+    This is the first in a sequence of "Control Flow as Graph" notional machines:
+</p>
+<ol>
+    <li>Sequence</li>
+    <li><a href="ControlFlowAsGraph-2-Selection.html">Selection</a></li>
+    <li><a href="ControlFlowAsGraph-3-MultiWaySelection.html">Multi-Way Selection</a></li>
+    <li><a href="ControlFlowAsGraph-4-ShortCircuit.html">Short-Circuit</a></li>
+    <li><a href="ControlFlowAsGraph-5-Repetition.html">Repetition</a></li>
+</ol>
+<p>
+    The following video Matthias Hauswirth uses the "Control Flow as Graph"
+    notional machine in his "Programming Fundamentals 2" Bachelor course
+    to explain sequences of statements as well as the entry and exit node in Java.
+    It also discusses <code>if</code>-statements 
+    (covered in the <a href="ControlFlowAsGraph-2-Selection.html">Selection</a> variant of this notional machine).
+</p>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/U0Sn6oJxOi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

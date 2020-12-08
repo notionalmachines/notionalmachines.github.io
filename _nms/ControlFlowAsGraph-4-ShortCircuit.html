@@ -1,0 +1,28 @@
+---
+title: Control Flow as Graph (4 - Short-Circuit)
+author: matthias
+ProgrammingLanguage: Java
+ProgrammingParadigm: imperative
+ConceptualAdvantage: "Understand concept of short-circuit Boolean operators  (|| and &&), and see how they only evaluate their right operand if needed."
+Form: Handmade representation
+DrawsAttentionTo: "The idea that for short-circuit Boolean operators, the second operand may never be evaluated (allowing common constructs like if (o!=null && o.length>0) ..."
+UseWhen: "When introducing short-circuit operators && and ||"
+Cost: "Requires prior introduction of 'Selection'."
+OriginSource: "Compilers (control-flow graphs) and flow charts"
+image: ControlFlowAsGraph-4-ShortCircuit.jpg
+Mapping:
+  "...": "..."
+  "|| in condition": "'false' arrow to extra diamond node"
+  "&& in condition": "'true' arrow to extra diamond node"
+---
+
+<p>
+  This is the fourth in a sequence of "Control Flow as Graph" notional machines:
+</p>
+<ol>
+  <li><a href="ControlFlowAsGraph-1-Sequence.html">Sequence</a></li>
+  <li><a href="ControlFlowAsGraph-2-Selection.html">Selection</a></li>
+  <li><a href="ControlFlowAsGraph-3-MultiWaySelection.html">Multi-Way Selection</a></li>
+  <li>Short-Circuit</li>
+  <li><a href="ControlFlowAsGraph-5-Repetition.html">Repetition</a></li>
+</ol>

@@ -1,0 +1,34 @@
+---
+title: Control Flow as Graph (2 - Selection)
+author: matthias
+ProgrammingLanguage: Java
+ProgrammingParadigm: imperative
+ConceptualAdvantage: "Understand concept of selection from structured programming (conditional statements like if, if-else), and make clear that a statement may or may not execute, based on a decision taken earlier in the control flow."
+Form: Handmade representation
+DrawsAttentionTo: "The idea of a 'selection' in structured programming, where a data (the condition's value) is turned into control flow (the next statement to execute)."
+UseWhen: "When introducing if-statements"
+Cost: "Requires prior introduction of 'Sequence'. Mismatch for short-circuit operators (&&, ||) or conditional expressions (c ? a : b), which don't map as naturally."
+OriginSource: "Compilers (control-flow graphs) and flow charts"
+image: ControlFlowAsGraph-2-Selection.jpg
+Mapping:
+  "...": "..."
+  "if condition": "diamond-shaped node"
+  "condition outcome": "label on an arrow coming out of a condition (e.g., true, false)"
+---
+
+<p>
+    This is the second in a sequence of "Control Flow as Graph" notional machines:
+</p>
+<ol>
+    <li><a href="ControlFlowAsGraph-1-Sequence.html">Sequence</a></li>
+    <li>Selection</li>
+    <li><a href="ControlFlowAsGraph-3-MultiWaySelection.html">Multi-Way Selection</a></li>
+    <li><a href="ControlFlowAsGraph-4-ShortCircuit.html">Short-Circuit</a></li>
+    <li><a href="ControlFlowAsGraph-5-Repetition.html">Repetition</a></li>
+</ol>
+<p>
+    The following video Matthias Hauswirth uses the "Control Flow as Graph"
+    notional machine in his "Programming Fundamentals 2" Bachelor course
+    to explain <code>if</code>-statements in Java:
+</p>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/U0Sn6oJxOi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
