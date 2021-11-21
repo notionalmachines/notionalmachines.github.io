@@ -7,7 +7,7 @@ ConceptualAdvantage: "Makes arrays tangible, embodied activity."
 Form: Representation
 DrawsAttentionTo: "Arrays are compound data structures."
 UseWhen: "When the concept of lists is new"
-Cost: ""
+Cost:
 OriginSource: "Interview, Emily Bakker."
 image: ArrayAsClothesline.jpg
 Mapping:

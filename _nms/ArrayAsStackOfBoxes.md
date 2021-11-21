@@ -7,8 +7,8 @@ ConceptualAdvantage: "Makes arrays tangible, embodied activity."
 Form: Analogy
 DrawsAttentionTo: "Lists as compound data type"
 UseWhen: "When the concept of lists is new"
-Cost: ""
-OriginSource: ""
+Cost:
+OriginSource:
 image: ArrayAsStackOfBoxes.jpg
 Mapping:
   "array": "stack of boxes"

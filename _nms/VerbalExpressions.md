@@ -7,7 +7,7 @@ ConceptualAdvantage: "Distinguishes between (string) literals and variables that
 Form: Representation
 DrawsAttentionTo: "Individual characters in a string."
 UseWhen: "When explaining expressions. May be nested in other NMs (e.g., Variable as a Box) when explaining variable assignment."
-Cost: 
+Cost:
 OriginSource: "Own practice"
 image: VerbalExpressions.png
 Mapping:

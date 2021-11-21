@@ -7,7 +7,7 @@ ConceptualAdvantage: "Makes explicit that functions have inputs (parameters) and
 Form: Analogy
 DrawsAttentionTo: "Parameter passing and return value."
 UseWhen: "First introducing functions."
-Cost: 
+Cost:
 OriginSource: "Interview, Scott Heggen"
 image: FunctionAsBlackBox.jpg
 Mapping:
