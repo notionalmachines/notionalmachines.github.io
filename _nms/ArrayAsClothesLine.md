@@ -11,8 +11,8 @@ Cost: ""
 OriginSource: "Interview, Emily Bakker."
 image: ArrayAsClothesline.jpg
 Mapping:
-  "list": "clothesline"
-  "list element": "clothespin"
-  "index": "label on the pin"
-  "value": "paper sheet in the pin"
+  "array": "clothesline"
+  "array element": "clothespin"
+  "element index": "label on the pin"
+  "element value": "paper sheet in the pin"
 ---

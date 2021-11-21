@@ -11,9 +11,9 @@ Cost: ""
 OriginSource: ""
 image: ArrayAsStackOfBoxes.jpg
 Mapping:
-  "list": "stack of boxes"
-  "list element": "box"
-  "index": "number on each box"
-  "value": "post-it in box"
+  "array": "stack of boxes"
+  "array element": "box"
+  "element index": "number on each box"
+  "element value": "post-it in box"
 ---
 

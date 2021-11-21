@@ -12,9 +12,9 @@ OriginSource: "Own practice"
 image: ArrayAsRowOfParkingSpaces.jpg
 Mapping:
   "array": "row of spaces in a parking lot"
-  "array index": "space number in lot"
   "array element": "car"
-  "array value": "specific car in a specific value"
+  "element index": "space number in lot"
+  "element value": "specific car in a specific value"
 ---
 
 In a statically typed language one can discuss rows that are for cars only, trucks only, motorcycles only, etc.

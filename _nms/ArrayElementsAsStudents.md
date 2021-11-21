@@ -11,7 +11,8 @@ Cost:
 OriginSource: "Interview, John Lynch"
 image: ArrayElementsAsStudents.jpg
 Mapping:
-  "array element": "student (standing in a row of students)"
-  "element value": "nationality of student"
+  "array": "row of students"
+  "array element": "student (standing in a row)"
   "element index": "relative position of the student, start with 0"
+  "element value": "nationality of student"
 ---
