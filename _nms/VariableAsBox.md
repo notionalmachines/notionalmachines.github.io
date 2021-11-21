@@ -8,7 +8,7 @@ Form: Analogy
 DrawsAttentionTo: Variables, access, initialization
 UseWhen: When the concept of variables is still unclear
 Cost: Might include multiple values hypothesis
-OriginSource: aa
+OriginSource: Own practice.
 image: VariableAsBox.png
 Mapping:
   Variable: Box
@@ -17,5 +17,3 @@ Mapping:
   "assign (list)": "new name also on box"
   "assign simple value": "second box with same post-it"
 ---
-
-TODO: More details about Felienne using this notional machine in her teaching.

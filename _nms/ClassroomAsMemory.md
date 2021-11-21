@@ -7,7 +7,7 @@ DrawsAttentionTo: "Relationships between items in memory, whether they are eleme
 ConceptualAdvantage: "Provides tangible focus for discussing addresses, offsets, and even byte ordering and segments."
 Form: Analogy
 UseWhen: "When you first introduce the idea of an address."
-Cost: "Vey small"
+Cost: "Very small"
 OriginSource: "colleague's practice"
 image: "HS_1_der_Universitat_Klagenfurt.jpg"
 Mapping:

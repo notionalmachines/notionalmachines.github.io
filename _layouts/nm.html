@@ -51,7 +51,12 @@ layout: default
       Draws Attention To
     </div>
   </h2>
+  {% assign stripped_draws = page.DrawsAttentionTo | strip_html | strip %}
+  {% if stripped_draws == empty %}
+  <div class='ui label'>not captured</div>
+  {% else %}
   <p>{{ page.DrawsAttentionTo }}</p>
+  {% endif %}
 
   <h2 class="ui header">
     <i class="compass icon"></i>
@@ -59,7 +64,12 @@ layout: default
       Use When
     </div>
   </h2>
+  {% assign stripped_use = page.UseWhen | strip_html | strip %}
+  {% if stripped_use == empty %}
+  <div class='ui label'>not captured</div>
+  {% else %}
   <p>{{ page.UseWhen }}</p>
+  {% endif %}
 
   <h2 class="ui header">
     <i class="dollar sign icon"></i>
@@ -67,7 +77,12 @@ layout: default
       Cost
     </div>
   </h2>
+  {% assign stripped_cost = page.Cost | strip_html | strip %}
+  {% if stripped_cost == empty %}
+  <div class='ui label'>not captured</div>
+  {% else %}
   <p>{{ page.Cost }}</p>
+  {% endif %}
 
   <h2 class="ui header">
     <i class="hand point left icon"></i>
@@ -94,14 +109,15 @@ layout: default
     {% endif %}
   </p>
 
-
+  {% assign stripped_content = content | strip_html | strip %}
+  {% if stripped_content != empty %}
   <h2 class="ui header">
     <i class="info circle icon"></i>
     <div class="content">
       Details
     </div>
   </h2>
-
   {{ content }}
+  {% endif %}
 
 </div>

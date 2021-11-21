@@ -5,9 +5,9 @@ ProgrammingLanguage: any
 ProgrammingParadigm: imperative
 ConceptualAdvantage: Provides a way to visualise input and action, and later the difference between action and output. The same visualisation extended to cover user defined procedures, parameters and later to explain sub-procedure calls including recursion.
 Form: Representation (hand-made)
-DrawsAttentionTo: "?"
-UseWhen: "?"
-Cost: "?"
+DrawsAttentionTo:
+UseWhen:
+Cost:
 OriginSource: "Own practice"
 image: ProcedureAsWorker.jpg
 Mapping:

@@ -8,7 +8,7 @@ Form: Handmade representation
 DrawsAttentionTo: "Different kinds of variables (objects) take up different space in memory. Statements and methods change the memory, which is visualized by changing the contents of the boxes when executing a statement or method."
 UseWhen: "When introducing language constructs in a beginners' programming course"
 Cost: "Investment - time/cognitivie"
-OriginSource: "Interview"
+OriginSource: "Interview, Jeroen Fokker"
 image: TypedBoxesMemory.jpg
 Mapping:
   "variable": "typed box/memory location"
@@ -17,4 +17,4 @@ Mapping:
   "method": "changes an object"
 ---
 
-Interview with Jeroen Fokker; based on a textbook by Lindsey & van der Meulen.
+Based on a textbook by Lindsey & van der Meulen.

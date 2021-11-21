@@ -7,7 +7,7 @@ ConceptualAdvantage: Makes variable tangible, gives impression of memory as a bu
 Form: Analogy
 DrawsAttentionTo: Variables contain values
 UseWhen: "When introducing memory/information, in the form of variables in BASIC"
-Cost: "?"
+Cost:
 OriginSource: "Textbook 'Introduction to Computer Programming: Basic'"
 image: VariableAsPigeonhole.jpg
 Mapping:

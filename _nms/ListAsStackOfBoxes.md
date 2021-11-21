@@ -5,9 +5,9 @@ ProgrammingLanguage: any
 ProgrammingParadigm: imperative
 ConceptualAdvantage: "Emphasises that only the head of list (top box) or the whole list (the stack on the pallet) is directly accessible, and that new items can be added on top of a list but not into the middle of it."
 Form: Analogy
-DrawsAttentionTo: "?"
-UseWhen: "?"
-Cost: "?"
+DrawsAttentionTo: "First-in, first-out property of a stack."
+UseWhen:
+Cost:
 OriginSource: "Own practice"
 image: ListAsStackOfBoxes.png
 Mapping:

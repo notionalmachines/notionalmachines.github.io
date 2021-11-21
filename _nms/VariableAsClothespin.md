@@ -7,12 +7,10 @@ ConceptualAdvantage: Makes variable tangible, helps prevent multiple values misc
 Form: Handmade representation
 DrawsAttentionTo: Variables contain *one* value
 Cost: Low
-OriginSource: Interview
+OriginSource: "Interview, Emily Bakker."
 image: VariableAsClothespin.png
 Mapping:
   "variable": "clothespin"
   "variable name": "label on the pin"
   "value": "paper sheet in the pin"
 ---
-
-TODO: More details about Felienne using this notional machine in her teaching.

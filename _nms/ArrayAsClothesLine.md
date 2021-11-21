@@ -1,5 +1,5 @@
 ---
-title: Array as Clothes line
+title: Array as Clothesline
 author: felienne
 ProgrammingLanguage: "any"
 ProgrammingParadigm: "imperative"
@@ -8,10 +8,10 @@ Form: Handmade representation
 DrawsAttentionTo: "Arrays are compound data structures."
 UseWhen: "When the concept of lists is new"
 Cost: ""
-OriginSource: "Interview with Emily Bakker."
-image: ArrayAsClothesLine.jpg
+OriginSource: "Interview, Emily Bakker."
+image: ArrayAsClothesline.jpg
 Mapping:
-  "list": "clothes line"
+  "list": "clothesline"
   "list element": "clothespin"
   "index": "label on the pin"
   "value": "paper sheet in the pin"

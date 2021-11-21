@@ -47,7 +47,13 @@
     
     <div class="extra">
         <span>
-          Collected by <span style="font-weight: bold; font-style: italic;">{{ nm.author }}</span>
+          Collected by
+          {% assign author = site.authors | where: 'short_name', nm.author | first %}
+          {% if author %}
+            <span style="font-weight: bold; font-style: italic;">
+              <a href="{{ author.url }}">{{ author.name }}</a>
+            </span>
+          {% endif %}
         </span>
     </div>
 </div>
