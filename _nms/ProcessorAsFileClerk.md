@@ -16,7 +16,6 @@ Mapping:
 ---
 
 Antonio Carzaniga pointed out that Richard Feynman used this notional machine.
-The original material includes a video in which Feynman can be seen using it and a textbook Feynman wrote.
 
 For a detailed discussion, see Matthias Hauswirth's blog post on
-[Richard Feynman's Notional Machine](https://medium.com/luceresearchlab/richard-feynmans-notional-machine-e39ecc9d992a).
+[Richard Feynman's Notional Machine](https://medium.com/luceresearchlab/richard-feynmans-notional-machine-e39ecc9d992a), with a video of Feynman and a reference to Feynman's lecture notes.
