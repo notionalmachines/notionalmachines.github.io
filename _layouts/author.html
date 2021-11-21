@@ -21,10 +21,11 @@ layout: default
   </div>
 
 
+  {% assign filtered_posts = site.nms | where: 'author', page.short_name %}
+  {% if filtered_posts.size > 0 %}
   <h3 class="ui header">Collected Notional Machines</h3>
 
   <div class="ui list">
-    {% assign filtered_posts = site.nms | where: 'author', page.short_name %}
     {% for post in filtered_posts %}
       <a class="item" href="{{ post.url }}">
       <i class="right triangle icon"></i>
@@ -35,5 +36,6 @@ layout: default
       </a>
     {% endfor %}
   </div>
+  {% endif %}
 
 </div>
