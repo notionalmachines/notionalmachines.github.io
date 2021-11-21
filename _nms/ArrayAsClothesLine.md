@@ -9,7 +9,7 @@ DrawsAttentionTo: "Arrays are compound data structures."
 UseWhen: "When the concept of lists is new"
 Cost: ""
 OriginSource: "Interview, Emily Bakker."
-image: ArrayAsClothesline1.jpg
+image: ArrayAsClothesline.jpg
 Mapping:
   "list": "clothesline"
   "list element": "clothespin"

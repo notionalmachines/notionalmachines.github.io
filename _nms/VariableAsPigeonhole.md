@@ -9,7 +9,7 @@ DrawsAttentionTo: Variables contain values
 UseWhen: "When introducing memory/information, in the form of variables in BASIC"
 Cost:
 OriginSource: "Textbook 'Introduction to Computer Programming: Basic'"
-image: VariableAsPigeonhole1.jpg
+image: VariableAsPigeonhole.jpg
 Mapping:
   "variable": "pigeon hole in shelf"
   "variable name": "label attached to the pigeon hole"
