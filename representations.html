@@ -1,0 +1,35 @@
+---
+title: "Representation-Based Notional Machines"
+---
+<div class="ui text" style="margin-left: 10px; margin-right: 10px; margin-top: 100px; margin-bottom: 100px">
+
+  {% assign sorted_nms = site.nms | where: "Form", "Representation" | sort_natural: 'title' %}
+  <h1 class="ui dividing header">Representation-Based Notional Machines</h1>
+
+  <div class="ui blue inverted segment">
+    <h2 class="ui small header">What is a representation-based notional machine?</h2>
+    <p>
+      Representation-based notional machines map from a programming context
+      to a context that is <i>not</i> a well known analogy
+      but simply a different representation.
+      There are different forms of such representations, such as
+      diagrams, physical constructions, acting, and verbalizations.
+    </p>
+    <p>
+      Some representations are handmade (e.g., a diagram drawn on a board)
+      while others are machine-generated (e.g., a visualization produced by a tool).
+    </p>
+  </div>
+
+  <p>
+  We collected and organized the following {{sorted_nms.size}} 
+  representation-based notional machines:
+  </p>
+
+  <div class="ui cards">
+    {% for nm in sorted_nms %}
+      {% include nmCard.html %}
+    {% endfor %}
+  </div>
+
+</div>

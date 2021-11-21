@@ -4,7 +4,7 @@ author: felienne
 ProgrammingLanguage: any
 ProgrammingParadigm: imperative
 ConceptualAdvantage: Makes variable tangible, helps prevent multiple values misconception
-Form: Handmade representation
+Form: Representation
 DrawsAttentionTo: Variables contain *one* value
 Cost: Low
 OriginSource: "Interview, Emily Bakker."

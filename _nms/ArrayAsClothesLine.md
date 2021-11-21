@@ -4,7 +4,7 @@ author: felienne
 ProgrammingLanguage: "any"
 ProgrammingParadigm: "imperative"
 ConceptualAdvantage: "Makes arrays tangible, embodied activity."
-Form: Handmade representation
+Form: Representation
 DrawsAttentionTo: "Arrays are compound data structures."
 UseWhen: "When the concept of lists is new"
 Cost: ""
