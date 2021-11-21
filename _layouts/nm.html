@@ -3,7 +3,42 @@ layout: default
 ---
 <div class="ui container" style="margin-top: 100px; margin-bottom: 100px">
 
-  <h1 class="ui dividing header">{{ page.title }}</h1>
+  <h1 class="ui dividing header">
+    {% if page.sequence %}
+    {{ page.sequence }}
+    &mdash;
+    <span style='color: #2185d0'>{{ page.Step }}. {{ page.StepTitle }}</a>
+    {% else %}
+    {{ page.title }}
+    {% endif %}
+  </h1>
+
+  {% if page.sequence %}
+    {% assign sorted_nms = site.nms | where: "sequence", page.sequence | sort_natural: 'Step' %}
+    <div>
+      {{page.sequence}} is a sequence consisting of the following 
+      {{sorted_nms.size}} notional machines:
+    </div>
+    <div class="ui inverted steps">
+      {% for nm in sorted_nms %}
+        {% if nm.Step == page.Step %}
+          <div class="active step">
+            <div class="content">
+              <div class="title">{{nm.Step}}. {{nm.StepTitle}}</div>
+            </div>
+          </div>
+        {% else %}
+          <a href="{{nm.url}}" class="step">
+            <div class="content">
+              <div class="title">{{nm.Step}}. {{nm.StepTitle}}</div>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div style="margin: 20px"></div>
+  {% endif %}
+
   <div class="ui grid">
     <div class="four wide column">
       <img class="ui medium rounded bordered image" src="/assets/images/nm/{{ page.image }}"></img>

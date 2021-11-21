@@ -1,20 +1,29 @@
 <div class="card">
-    <a href="{{ nm.url }}" class="image">
+  
+  <a href="{{ nm.url }}" class="image">
+      {% if nm.sequence %}
+      <div class="ui right corner blue label"><i class="layer group icon"></i></div>
+      {% endif %}
       <img src="/assets/images/nm/{{ nm.image }}">
     </a>
 
-    <div class="content">
+    <div class="content" style="flex-grow: 0">
+      {% if nm.sequence %}
+      <a href="{{ nm.url }}" class="header">{{ nm.sequence }}</a>
+      <a href="{{ nm.url }}" class="header" style='color: #2185d0'>{{ nm.Step }}. {{ nm.StepTitle }}</a>
+      {% else %}
       <a href="{{ nm.url }}" class="header">{{ nm.title }}</a>
+      {% endif %}
       <div class="meta">{{ nm.Form }}</div>
     </div>
-
+    
     <div class="extra">
         <span class="right floated">
             {{ nm.ProgrammingParadigm }} /
               {{ nm.ProgrammingLanguage }}
         </span>
         <span>
-          Paradigm/Language:
+          Language:
         </span>
     </div>
   
