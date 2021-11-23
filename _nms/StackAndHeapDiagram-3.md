@@ -12,13 +12,17 @@ DrawsAttentionTo: "References."
 UseWhen: "Introducing the concept of references (pointers), and aliasing (multiple references pointing to the same object)."
 Cost: "Straightforward; just draw an arrow."
 OriginSource: "Own practice"
-image: StackAndHeapDiagram-2.png
+image: StackAndHeapDiagram-3.png
 Mapping:
-  "...": "(all aspects of Stack and Heap Diagram 1 - Objects)"
-  "...": "(all aspects of Stack and Heap Diagram 2 - Stack Frames)"
+  "...": "(all aspects of 1 - Objects and 2 - Stack Frames)"
   "reference value": "arrow from a variable rectangle (anywhere, i.e., in the stack or the heap) to an object rounded rectangle"
   "null value": "a ground symbol (i.e., the absence of an arrow)"
 ---
+
+We use this notional machine in instruction as well as assessments
+(e.g., clicker questions, mastery checks, exams).
+For instruction, the instructor draws the representation.
+For assessment, the student draws the representation.
 
 The *name* of this notional machine is inspired by two of the three regions that make up the memory of the runtime environment of imperative programming languages:
 
@@ -29,8 +33,22 @@ The third area, "globals", could be added to the diagram, but it is less importa
 
 * Globals: where global variables (e.g., static fields in Java) are located
 
-The *notation* for this notional machine is based on how the BlueJ IDE represents objects, with a few differences:
+While we primarily use this notional machine for Java, it could easily be adapted for other imperative object-oriented programming languages, such as C# or Python.
 
+<h3 class="ui header">Notation</h3>
+
+<h4 class="ui header">Objects, Stack Frames, and References</h4>
+<img src="/assets/images/nm/StackAndHeapDiagram.png" class="ui bordered image">
+
+<h4 class="ui header">Arrays</h4>
+<img src="/assets/images/nm/StackAndHeapDiagram-Arrays.png" class="ui bordered image">
+
+<h4 class="ui header">Origins of Notation</h4>
+
+The *notation* for this notional machine is based on how the [BlueJ IDE](https://bluej.org/) represents objects, with a few differences:
+
+* BlueJ only shows objects, we also show stack frames (as rectangles)
+* Unlike BlueJ, we show references as arrows
 * Unlike BlueJ, we refrain from associating names with objects,
 to avoid the [ObjectsMustBeNamed](https://progmiscon.org/misconceptions/Java/ObjectsMustBeNamed/) misconception.
 * We represent fields (and variables in general) as rectangles,
@@ -39,10 +57,6 @@ but we place the type of the variable **above** the rectangle, the name of the v
 
 <img src="/assets/images/nm/StackAndHeapDiagram-BlueJ-Object.png" class="ui medium image">
 
-We use this notional machine in instruction as well as assessments
-(e.g., clicker questions, mastery checks, exams).
-For instruction, the instructor draws the representation.
-For assessment, the student draws the representation.
 
 <h3 class="ui header">Stack &amp; Heap Diagrams in Informa Clicker</h3>
 The [Informa Clicker](http://sape.inf.usi.ch/informa) tool, a software-based classroom response system, provides a question type with an integrated editor

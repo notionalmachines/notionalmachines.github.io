@@ -1,21 +1,23 @@
 ---
-title: "Stack and Heap Diagram (1 - Objects)"
+title: "Stack and Heap Diagram (4 - Arrays)"
 sequence: "Stack and Heap Diagram"
-Step: 1
-StepTitle: "Objects"
+Step: 4
+StepTitle: "Arrays"
 author: matthias
 ProgrammingLanguage: Java
 ProgrammingParadigm: imperative, OO
-ConceptualAdvantage: "Makes explicit the notion of an object, that groups together all the variables that correspond to the object's state."
+ConceptualAdvantage: "Makes explicit that arrays are heap objects where elements are accessed by index, and where the length is stored in a special read-only field. Particularly useful when explaining arrays of arrays."
 Form: Representation
-DrawsAttentionTo: "An object's state."
-UseWhen: "Introducing the concept of an object."
-Cost: "Straightforward; just draw a rounded rectangle around some variables."
+DrawsAttentionTo: "Arrays."
+UseWhen: "Introducing the concept of array, and arrays of arrays."
+Cost: "Only a minor addition to the cost of the prior variant of this notional machine."
 OriginSource: "Own practice"
-image: StackAndHeapDiagram-1.png
+image: StackAndHeapDiagram-4.png
 Mapping:
-  "object": "red rounded rectangle, with class name containing instance variables"
-  "instance variable": "box inside object, with name, type, value"
+  "...": "(all aspects of 1 - Objects, 2 - Stack Frames, 3 - References)"
+  "array": "red rounded rectangle on the heap, labeled with array type"
+  "array element": "a field in the array, with index, type, and value"
+  "array length": "a field in the array, with name 'length' and type int, and a value corresponding to the number of elements"
 ---
 
 We use this notional machine in instruction as well as assessments
