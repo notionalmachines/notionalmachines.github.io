@@ -44,12 +44,21 @@ layout: default
       <img class="ui medium rounded bordered image" src="/assets/images/nm/{{ page.image }}"></img>
     </div>
     <div class="ten wide column">
-      <h3>Programming Paradigm</h3>
-      <p>{{ page.ProgrammingParadigm }}</p>
       <h3>Programming Language</h3>
-      <p>{{ page.ProgrammingLanguage }}</p>
+      <p>{{ page.ProgrammingParadigm }} / {{ page.ProgrammingLanguage }}</p>
       <h3>Form</h3>
       <p>{{ page.Form }}</p>
+      <h3>Attribution &mdash; Origin / Source</h3>
+      <p>
+        Collected by
+        {% assign author = site.authors | where: 'short_name', page.author | first %}
+        {% if author %}
+          <span style="font-weight: bold; font-style: italic;">
+            <a href="{{ author.url }}">{{ author.name }}</a>
+          </span> &mdash;
+        {% endif %}    
+        {{ page.OriginSource }}
+      </p>
     </div>
   </div>
 
@@ -118,31 +127,6 @@ layout: default
   {% else %}
   <p>{{ page.Cost }}</p>
   {% endif %}
-
-  <h2 class="ui header">
-    <i class="hand point left icon"></i>
-    <div class="content">
-      Origin / Source
-    </div>
-  </h2>
-  <p>{{ page.OriginSource }}</p>
-
-  <h2 class="ui header">
-    <i class="user icon"></i>
-    <div class="content">
-      Attribution
-    </div>
-  </h2>
-  <p>
-    Collected by
-    {{ page.date | date_to_string }}
-    {% assign author = site.authors | where: 'short_name', page.author | first %}
-    {% if author %}
-      <span style="font-weight: bold; font-style: italic;">
-        <a href="{{ author.url }}">{{ author.name }}</a>
-      </span>
-    {% endif %}
-  </p>
 
   {% assign stripped_content = content | strip_html | strip %}
   {% if stripped_content != empty %}
