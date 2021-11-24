@@ -1,29 +1,28 @@
 ---
-title: "Expression as Tree (1 - Arithmetic)"
+title: "Expression as Tree (3 - Objects)"
 sequence: "Expression as Tree"
-Step: 1
-StepTitle: "Arithmetic"
+Step: 3
+StepTitle: "Objects"
 author: matthias
 ProgrammingLanguage: Java
 ProgrammingParadigm: imperative, OO
-ConceptualAdvantage: "A large fraction of code consists of expressions. Students already know about expressions from school arithmetic. This notional machine makes the structure of such simple expressions explicit,
-and provides a way to explain their bottom-up step-by-step evaluation."
+ConceptualAdvantage: "The realizatin that object allocation, method invocation, and field access are also just expressions and can be composed like any other expression."
 Form: Representation
-DrawsAttentionTo: "The structure of arithmetic expressions students still know from school."
-UseWhen: "To reason about the structure and semantics of simple arithmetic expressions."
+DrawsAttentionTo: "How to work with instances and classes."
+UseWhen: "When explaining nesting and chaining of method calls and constructor calls, class vs. instance method and field accesses, null, and this."
 Cost: "Small, can be done on paper or with a tool like Expression Tutor."
 OriginSource: "Own practice"
-image: ExpressionAsTree-1.jpg
+image: ExpressionAsTree-3.jpg
 Mapping:
-  "expression": "tree of nodes linked together"
-  "operator": "green node"
-  "operand": "hole in a node where a child node can be attached"
-  "subexpression inside expression": "subtree connected to a node's hole"
-  "type of subexpression": "blue tag above subexpressions's root node"
-  "numerical literal": "leaf tree node labeled with the number"
-  "variable": "leaf tree node labeled with name of variable of a numeric type"
-  "unary + or - operator": "internal tree node with operator in front of a hole"
-  "binary + - * / % operator": "internal tree node with operator between two holes"
+  "...": "(all aspects from 2-Logic)"
+  "null": "tree node containing 'null'"
+  "this": "tree node containing 'this'"
+  "instantiation": "tree node with 'new', class name, and a parentheses containing comma-separated holes for constructor parameters"
+  "variable": "tree node containing name of variable of an Object type"
+  "instance field access": "tree node containing a hole, a dot, and a field name"
+  "instance method invocation": "tree node with a hole, a dot, and parentheses containing comma-separated holes for method parameters"
+  "class field access": "tree node containing class name, a dot, and a field name"
+  "class method invocation": "tree node with class name, a dot, and parentheses containing comma-separated holes for method parameters"
 ---
 
 The following videos and activities come from [ExpressionTutor.org](https://expressiontutor.org/), where you can find a much more comprehensive set of resources and tools.
@@ -32,11 +31,11 @@ but the material discussed here is specific to Java.
 
 The [Crash Course: Expressions in Java](https://expressiontutor.org/course/JavaExpressionsCrashCourse/part/Part%202) provides a learning experience that corresponds to this notional machine sequence.
 
-<h4 class="ui header">Explainer Video: Basic Arithmetic Expressions</h4>
+<h4 class="ui header">Explainer Video: Expressions Involving Objects</h4>
 
-The following video comes from section [Arithmetic](https://expressiontutor.org/course/JavaExpressionsCrashCourse/part/Part%202/2.1) of the Crash Course.
+The following video comes from section [Objects](https://expressiontutor.org/course/JavaExpressionsCrashCourse/part/Part%202/2.3) of the Crash Course.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ac8L-GsuvgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IF1ZVvRQQUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h4 class="ui header">Example expressiontutor.org Activity</h4>
 
