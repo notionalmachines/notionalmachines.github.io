@@ -8,7 +8,7 @@ ProgrammingLanguage: Java
 ProgrammingParadigm: imperative, OO
 ConceptualAdvantage: "Makes explicit the fact that logic expressions have the same structural properties as the well known arithmetic expressions."
 Form: Representation
-DrawsAttentionTo: "Logic operators and Boolean literals."
+DrawsAttentionTo: "The structure, typing, and evaluation of expressions involving logic operators and Boolean literals."
 UseWhen: "To reason about the structure and semantics of simple logic expressions."
 Cost: "Small, can be done on paper or with a tool like Expression Tutor."
 OriginSource: "Own practice"
@@ -17,8 +17,8 @@ Mapping:
   "...": "(all aspects from 1-Arithmetic)"
   "Boolean literal": "leaf tree node labeled with true or with false"
   "variable": "leaf tree node labeled with name of variable of type boolean"
-  "negation operator !": "internal tree node with ! in front of a hole"
-  "binary | & || && operator": "internal tree node with operator between two holes"
+  "unary negation operator (!)": "tree node with operator in front of a hole"
+  "binary logical operator (|, &, ||, &&)": "tree node with operator between two holes"
 ---
 
 The following videos and activities come from [ExpressionTutor.org](https://expressiontutor.org/), where you can find a much more comprehensive set of resources and tools.
@@ -37,7 +37,7 @@ The following video comes from section [Logic](https://expressiontutor.org/cours
 
 Here is an example "Expression Tutor" activity. Can you solve it?
 
-<iframe width="100%" height="904" frameborder="0" allowfullscreen src="https://expressiontutor.org/activity/do?task=615f4aea-16d1-45fe-9935-4beabcdd06d3&iframe"></iframe>
+<iframe width="100%" height="904" frameborder="0" allowfullscreen src="https://expressiontutor.org/activity/do?task=b21be6c4-3f05-4dc8-9e8f-7aca6df627e5&iframe"></iframe>
 
 <h4 class="ui header">Explainer Video: Where to find expressions</h4>
 
