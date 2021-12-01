@@ -61,6 +61,12 @@ but we place the type of the variable **above** the rectangle, the name of the v
 The [Informa Clicker](http://sape.inf.usi.ch/informa) tool, a software-based classroom response system, provides a question type with an integrated editor
 for stack and heap diagrams.
 
+{% include paper.html
+  authors="Matthias Hauswirth and Andrea Adamoli"
+  url="https://dl.acm.org/doi/10.1145/1596655.1596657"
+  title="Solve & Evaluate with Informa: A Java-based Classroom Response System for Teaching Java"
+  publication="PPPJ '09" %}
+
 <h4 class="ui header">Constructor Calls</h4>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Hpg4fBTCYuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
