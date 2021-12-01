@@ -21,17 +21,11 @@ Mapping:
 Created by Peter Donaldson and Quintin Cutts /
 [PLAN C project](https://trace.dcs.gla.ac.uk/planc/).
 
-<div class="ui icon message">
-  <i class="book icon"></i>
-  <div class="content">
-    <div class="header">Check this research paper</div>
-    <p>
-      Peter Donaldson and Quintin Cutts.
-      <a href="https://dl.acm.org/doi/10.1145/3265757.3265776">Flexible Low-cost Activities to Develop Novice Code Comprehension Skills in Schools</a>
-      WiPSCE'19
-    </p>
-  </div>
-</div>
+{% include paper.html
+   authors="Peter Donaldson and Quintin Cutts"
+   url="https://dl.acm.org/doi/10.1145/3265757.3265776"
+   title="Flexible Low-cost Activities to Develop Novice Code Comprehension Skills in Schools"
+   publication="WiPSCE '19" %}
 
 ### Two stages to TRACS trace
 

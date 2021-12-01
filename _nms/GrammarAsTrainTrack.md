@@ -20,12 +20,14 @@ Mapping:
   "repetition": "two switches allowing the train engine to go back and repeat a part of the grammar multiple times"
 ---
 
-Non-terminal symbols appearing in a grammar rule mean that one has to take an additional train engine to start processing the rule of that non-terminal (i.e., one needs multiple train engines, and it can be confusing to understand which prior engine to go back to when one finishes the track of a rule).
+The idea is described under the name "Language Trains",
+one of three different "programming languages" that strive to eliminate abstraction, in the following paper:
 
-The idea is described as "Language Trains",
-one of three different programming languages that strive to eliminate abstraction,
-in Hauswirth, Adamoli, and Azadmanesh's
-[The Program is the System](https://dl.acm.org/doi/10.1145/3141880.3141894).
+{% include paper.html
+   authors="Matthias Hauswirth, Andrea Adamoli, and Mohammad Azadmanesh"
+   url="https://dl.acm.org/doi/10.1145/3141880.3141894"
+   title="The Program is the System"
+   publication="Koli Calling '17" %}
 
 This notional machine was used to explain grammars to high school students and the general public in the 10-year anniversary exhibition
 of the Faculty of Informatics of USI.
@@ -38,3 +40,6 @@ It was further used, in a virtual form, in a [course on programming language con
 
 <img src="/assets/images/nm/GrammarAsTrainTracks3.png" class="ui fluid bordered image">
 
+### Usage Note
+
+Non-terminal symbols appearing in a grammar rule mean that one has to take an additional train engine to start processing the rule of that non-terminal (i.e., one needs multiple train engines, and it can be confusing to understand which prior engine to go back to when one finishes the track of a rule).

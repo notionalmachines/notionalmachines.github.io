@@ -19,11 +19,21 @@ Mapping:
   "function return value": "last domino piece in a line"
 ---
 
+The idea is described under the name "Domino Circuit",
+one of three different "programming languages" that strive to eliminate abstraction, in the following paper:
 
-The idea is described as "Domino Circuit",
-one of three different programming languages that strive to eliminate abstraction,
-in Hauswirth, Adamoli, and Azadmanesh's
-[The Program is the System](https://dl.acm.org/doi/10.1145/3141880.3141894).
+{% include paper.html
+   authors="Matthias Hauswirth, Andrea Adamoli, and Mohammad Azadmanesh"
+   url="https://dl.acm.org/doi/10.1145/3141880.3141894"
+   title="The Program is the System"
+   publication="Koli Calling '17" %}
 
-This notional machine was used to logic operations to high school students and the general public in the 10-year anniversary exhibition
+This notional machine was used to explain logic operations to high school students and the general public in the 10-year anniversary exhibition
 of the Faculty of Informatics of USI.
+Additionally, at the end of each exhibition day,
+a four-bit full-adder built entirely from domino pieces was
+used to add two numbers picked by the students:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EEcU0xhwvZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The original idea of a "Domino Computer"&mdash;and [a fantastic set of related resources](http://think-maths.co.uk/downloads/domino-computer-worksheets)&mdash; comes from "stand-up mathematician" Matt Parker.
