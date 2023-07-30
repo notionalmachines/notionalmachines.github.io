@@ -17,6 +17,7 @@ Mapping:
   "and operation": "two lines of dominos like in right image"
   "function argument": "first domino piece in a line"
   "function return value": "last domino piece in a line"
+Topic: "Logic"
 ---
 
 The idea is described under the name "Domino Circuit",

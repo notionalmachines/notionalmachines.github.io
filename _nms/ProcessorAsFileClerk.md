@@ -13,6 +13,7 @@ image: ProcessorAsFileClerk.jpg
 Mapping:
   "processor": "file clerk"
   "instruction": "action taken by file clerk (e.g., read info off a card)"
+Topic: "Other"
 ---
 
 Antonio Carzaniga pointed out that Richard Feynman used this notional machine.

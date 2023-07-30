@@ -20,6 +20,7 @@ Mapping:
   "variable declaration": "find first blank column in memory table and add name of variable in first row; value added underneath if initialised"
   "variable assignment": "find variable in the memory table, strike through existing entry, and add entry to row below."
   "conditionals and loops": "evaluate control expression to 'True' or 'False', then follow relevant labelled control path to next instruction"
+Topic: "ControlFlow"
 ---
 
 Created by Peter Donaldson and Quintin Cutts /

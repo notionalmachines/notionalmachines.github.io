@@ -19,6 +19,7 @@ Mapping:
   "variable": "leaf tree node labeled with name of variable of type boolean"
   "unary negation operator (!)": "tree node with operator in front of a hole"
   "binary logical operator (|, &, ||, &&)": "tree node with operator between two holes"
+Topic: "Expressions"
 ---
 
 The following videos and activities come from [ExpressionTutor.org](https://expressiontutor.org/), where you can find a much more comprehensive set of resources and tools.

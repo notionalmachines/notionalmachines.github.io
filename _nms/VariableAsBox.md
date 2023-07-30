@@ -16,4 +16,5 @@ Mapping:
   "rename variable": "new name on box"
   "assign (list)": "new name also on box"
   "assign simple value": "second box with same post-it"
+Topic: "Variables"
 ---

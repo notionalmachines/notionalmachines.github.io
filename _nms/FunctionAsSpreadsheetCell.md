@@ -12,6 +12,7 @@ OriginSource: "Interview; used by Frans Wiering, source Roelof van Zwol in a cou
 image: FunctionAsSpreadsheetCell.jpg
 Mapping:
   "function": "cell transforming input to output"
+Topic: "Functions"
 ---
 
 Detailed screenshot of example spreadsheet:

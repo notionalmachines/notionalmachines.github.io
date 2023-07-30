@@ -14,6 +14,7 @@ Mapping:
   "function": "black box"
   "parameters": "arrow into the box"
   "return value": "arrow out of the box"
+Topic: "Functions"
 ---
 
 This notional machine also encourages a discussion of pure functions, for which the *only* way to communicate with the outside is to read their parameter values and to produce a return value.

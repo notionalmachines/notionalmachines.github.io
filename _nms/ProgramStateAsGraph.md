@@ -19,6 +19,7 @@ Mapping:
   "reference value": "solid arrow pointing to a rectangle"
   "primitive value": "value written inside a box"
   "callee-caller relationship": "dashed red arrow from callee stack frame to caller stack frame"
+Topic: "State"
 ---
 
 James Riely [developed and described a tool](https://fpl.cs.depaul.edu/jriely/visualization/), in the form of a Java class, [Trace.java](https://fpl.cs.depaul.edu/jriely/visualization/Trace.java), that produces graph representations of the Java program state in the form of GraphViz dot graphs.

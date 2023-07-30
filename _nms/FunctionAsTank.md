@@ -14,6 +14,7 @@ Mapping:
   "function": "tank"
   "parameters": "hoppers on top of tank"
   "return value": "output pipe on bottom of tank"
+Topic: "Functions"
 ---
 
 Brian Harvey also calls this notional machine "Plumbing Diagram".

@@ -13,4 +13,5 @@ image: VariableTraceTable.jpg
 Mapping:
   "variable": "table heading"
   "value": "last element listed in the column"
+Topic: "Variables"
 ---

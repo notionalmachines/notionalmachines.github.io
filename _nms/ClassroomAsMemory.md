@@ -16,5 +16,6 @@ Mapping:
   address: "established by counting off"
   offset: "number of seats between two targets"
   segment: "front, middle, or back of the room"
+Topic: "Memory"
 ---
 

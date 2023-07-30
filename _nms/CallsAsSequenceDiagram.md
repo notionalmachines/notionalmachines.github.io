@@ -16,6 +16,7 @@ Mapping:
   "activation": "tall box along lifeline from call arrow to return arrow"
   "object": "box at top and lifeline down"
   "thread": "line through all calls and returns from start to finish of diagram"
+Topic: "Functions"
 ---
 
 This representation is inspired by [UML](https://www.omg.org/spec/UML/2.5.1/About-UML/) "Sequence Diagrams" (which describe an interaction by showing the sequence of interchanged messages).

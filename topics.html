@@ -1,0 +1,19 @@
+---
+title: "Notional Machines by Topic"
+---
+<div class="ui text" style="margin-left: 10px; margin-right: 10px; margin-top: 100px; margin-bottom: 100px">
+
+  <h1 class="ui dividing header">Notional Machines by Topic</h1>
+
+  {% assign topics = "Arrays, Functions, Stack, Memory, ControlFlow, Expressions, HashSets, Objects, Parsing, State, Variables, Other" | split: ", " %}
+
+  {% for topic in topics %}
+    {% assign sorted_nms = site.nms | where: "Topic", topic | sort_natural: 'title' %}
+    <h1>{{ topic }}</h1>
+    <div class="ui cards">
+      {% for nm in sorted_nms %}
+        {% include nmCard.html %}
+      {% endfor %}
+    </div>  
+  {% endfor %}
+</div>

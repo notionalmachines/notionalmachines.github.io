@@ -18,6 +18,7 @@ Mapping:
   "array": "red rounded rectangle on the heap, labeled with array type"
   "array element": "a field in the array, with index, type, and value"
   "array length": "a field in the array, with name 'length' and type int, and a value corresponding to the number of elements"
+Topic: "Arrays"
 ---
 
 We use this notional machine in instruction as well as assessments

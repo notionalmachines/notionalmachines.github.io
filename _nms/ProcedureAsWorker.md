@@ -17,6 +17,7 @@ Mapping:
   "procedure implementation": "instructions for the worker on how to do their job"
   "procedure effect": "how the worker affects the world"
   "procedure result": "what the worker speaks to the worker on their left"
+Topic: "Functions"
 ---
 
 

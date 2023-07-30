@@ -18,6 +18,7 @@ Mapping:
   "sequence": "track segment going from one tunnel to the next"
   "selection": "two switches to split and join the track, requiring the train engine to decide which track to take"
   "repetition": "two switches allowing the train engine to go back and repeat a part of the grammar multiple times"
+Topic: "Parsing"
 ---
 
 The idea is described under the name "Language Trains",
