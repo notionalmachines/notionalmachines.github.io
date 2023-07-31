@@ -5,7 +5,7 @@ title: "Notional Machines by Topic"
 
   <h1 class="ui dividing header">Notional Machines by Topic</h1>
 
-  {% assign topics = "Arrays, Functions, Stack, Memory, ControlFlow, Expressions, HashSets, Objects, Parsing, State, Variables, Other" | split: ", " %}
+  {% assign topics = "Arrays, Functions, Stack, Memory, ControlFlow, Expressions, Objects, State, Variables, Other" | split: ", " %}
 
   {% for topic in topics %}
     {% assign sorted_nms = site.nms | where: "Topic", topic | sort_natural: 'title' %}
