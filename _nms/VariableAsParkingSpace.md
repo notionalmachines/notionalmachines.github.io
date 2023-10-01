@@ -15,5 +15,6 @@ Mapping:
   value: "vehicle"
   "type of variable": "vehicle size/shape/constraint on parking space"
   "type of value": "type of vehicle"
+Topic: "Variables"
 ---
 

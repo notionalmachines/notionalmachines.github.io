@@ -18,6 +18,7 @@ Mapping:
   "array allocation": "tree node with 'new', element type, and [hole] for each dimension"
   "array length": "tree node with a hole and '.length'"
   "array element access": "tree node with a hole, and [hole]"
+Topic: "Expressions"
 ---
 
 The following videos and activities come from [ExpressionTutor.org](https://expressiontutor.org/), where you can find a much more comprehensive set of resources and tools.

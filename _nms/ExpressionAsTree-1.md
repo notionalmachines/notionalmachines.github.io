@@ -24,6 +24,7 @@ Mapping:
   "variable": "tree node labeled with name of variable of a numeric type"
   "unary arithmetic operator (+, -)": "tree node with operator in front of a hole"
   "binary arithmetic operator (+, -, *, /, %)": "tree node with operator between two holes"
+Topic: "Expressions"
 ---
 
 The following videos and activities come from [ExpressionTutor.org](https://expressiontutor.org/), where you can find a much more comprehensive set of resources and tools.

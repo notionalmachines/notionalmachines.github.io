@@ -20,4 +20,5 @@ Mapping:
   "stack frame": "rectangle with the method name written on the side containing all local variables"
   "reference": "pocket containing a remote control with a ribbon to the referent"
   "null": "empty pocket with an X shown in the back"
+Topic: "Arrays"
 ---

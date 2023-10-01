@@ -23,6 +23,7 @@ Mapping:
   "instance method invocation": "tree node with a hole, a dot, and parentheses containing comma-separated holes for method parameters"
   "class field access": "tree node containing class name, a dot, and a field name"
   "class method invocation": "tree node with class name, a dot, and parentheses containing comma-separated holes for method parameters"
+Topic: "Expressions"
 ---
 
 The following videos and activities come from [ExpressionTutor.org](https://expressiontutor.org/), where you can find a much more comprehensive set of resources and tools.

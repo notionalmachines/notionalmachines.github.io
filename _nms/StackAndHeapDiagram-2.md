@@ -18,6 +18,7 @@ Mapping:
   "stack frame": "grey rectangle, with method name, containing local variables and parameters of the method"
   "local variable": "box inside stack frame, with name, type, value"
   "parameter": "box inside stack frame, with name, type, value"
+Topic: "Stack"
 ---
 
 We use this notional machine in instruction as well as assessments

@@ -18,4 +18,5 @@ Mapping:
   "variable type": "sticky note with the name of the type next to the pocket that holds the reference"
   "parent reference": "a remote control that only has buttons corresponding to the things that the parent object knows how to do."
   "child object": "a stuffed animal that - as a child - 'does what it wants' and not necessarily what the parent would do."
+Topic: "Objects"
 ---

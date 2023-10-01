@@ -15,6 +15,7 @@ Mapping:
   "array element": "car"
   "element index": "space number in lot"
   "element value": "specific car in a specific value"
+Topic: "Arrays"
 ---
 
 In a statically typed language one can discuss rows that are for cars only, trucks only, motorcycles only, etc.

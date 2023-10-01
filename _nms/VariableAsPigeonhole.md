@@ -14,6 +14,7 @@ Mapping:
   "variable": "pigeon hole in shelf"
   "variable name": "label attached to the pigeon hole"
   "value": "note inside the pigeon hole"
+Topic: "Variables"
 ---
 
 Used by Usborne's [Introduction to Computer Programming: Basic](https://drive.google.com/file/d/0Bxv0SsvibDMTUXdYTnRaTy1LLVE/view).

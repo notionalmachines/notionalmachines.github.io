@@ -17,6 +17,7 @@ Mapping:
   "...": "(all aspects of 1 - Objects and 2 - Stack Frames)"
   "reference value": "arrow from a variable rectangle (anywhere, i.e., in the stack or the heap) to an object rounded rectangle"
   "null value": "a ground symbol (i.e., the absence of an arrow)"
+Topic: "Memory"
 ---
 
 We use this notional machine in instruction as well as assessments

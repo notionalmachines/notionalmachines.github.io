@@ -15,6 +15,7 @@ Mapping:
   "list element": "box on the stack"
   "[": "top of the stack"
   "]": "pallet"
+Topic: "Stack"
 ---
 
 This notional machine was used in the following report:

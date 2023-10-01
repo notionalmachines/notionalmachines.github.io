@@ -14,4 +14,5 @@ Mapping:
   "local variable": "box with label at bottom of a frame labeled with function name"
   "parameter": "box with label at the top of a frame labeled with function name"
   "variable in main": "box with label in a frame called main"
+Topic: "Functions"
 ---

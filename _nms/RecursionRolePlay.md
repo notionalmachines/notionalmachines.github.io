@@ -17,6 +17,7 @@ Mapping:
   "base case": "(action of) last person in line"
   "recursive case": "(action of) all but last persons in line"
   "linked list": "line of persons (e.g., waiting in amusement park, or row in classroom)"
+Topic: "Functions"
 ---
 
 This notional machine is based on a suggestion by Benedict DuBoulay at EC-TEL 2016.

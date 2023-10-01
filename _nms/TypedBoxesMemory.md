@@ -15,6 +15,7 @@ Mapping:
   "statement": "changes a memory location"
   "object": "collection of boxes in memory"
   "method": "changes an object"
+Topic: "Memory"
 ---
 
 Based on a textbook by Lindsey & van der Meulen.

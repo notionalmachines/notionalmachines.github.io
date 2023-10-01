@@ -16,6 +16,7 @@ image: StackAndHeapDiagram-1.png
 Mapping:
   "object": "red rounded rectangle, with class name containing instance variables"
   "instance variable": "box inside object, with name, type, value"
+Topic: "Objects"
 ---
 
 We use this notional machine in instruction as well as assessments

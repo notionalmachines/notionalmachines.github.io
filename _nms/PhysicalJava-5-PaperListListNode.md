@@ -17,4 +17,5 @@ Mapping:
   "...": "(all aspects of Physical Java 4)"
   "local variable": "free floating variable"
   "stack frame": "(not represented)"
+Topic: "Memory"
 ---

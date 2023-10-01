@@ -13,4 +13,5 @@ image: VerbalExpressions.png
 Mapping:
   "literal string": "pronounce each character in string"
   "variable": "pronounce 'the variable' and give its whole name"
+Topic: "Expressions"
 ---
