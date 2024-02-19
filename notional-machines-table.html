@@ -1,0 +1,49 @@
+---
+layout: default
+title: "Table of Notional Machines"
+---
+<div class="ui text" style="margin-left: 10px; margin-right: 10px; margin-top: 100px; margin-bottom: 100px">
+
+  {% assign sorted_nms = site.nms | sort_natural: 'title' %}
+  <h1 class="ui dividing header">Table of Notional Machines</h1>
+
+  <p>
+    Copy-paste one of these tables if you need a list of the notional machines described by this site.
+  </p>
+
+  <h2>CSV Table</h2>
+  <pre style="padding: 10px; background-color: #f0f0f0">
+{% for nm in sorted_nms %}{% if nm.sequence %}Sequence{% else %}Individual{% endif %},{% if nm.sequence %}{{ nm.sequence }}-{{ nm.Step }}-{{ nm.StepTitle }}{% else %}{{ nm.title }}{% endif %},{{ nm.Form }},{{ nm.ProgrammingParadigm }},{{ nm.ProgrammingLanguage }}
+{% endfor %}
+  </pre>
+
+  <h2>HTML Table</h2>
+  <table>
+    <tr>
+      <th>NM Sequence?</th>
+      <th>Name</th>
+      <th>Form</th>
+      <th>Paradigm</th>
+      <th>Language</th>
+    </tr>
+    {% for nm in sorted_nms %}
+      <tr>
+        <td>
+          {% if nm.sequence %}Sequence{% else %}Individual{% endif %}
+        </td>
+        <td>
+          <a href="{{ nm.url }}">{% if nm.sequence %}{{ nm.sequence }}-{{ nm.Step }}-{{ nm.StepTitle }}{% else %}{{ nm.title }}{% endif %}</a>
+        </td>
+        <td>
+          {{ nm.Form }}
+        </td>
+        <td>
+          {{ nm.ProgrammingParadigm }}
+        </td>
+        <td>
+          {{ nm.ProgrammingLanguage }}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
